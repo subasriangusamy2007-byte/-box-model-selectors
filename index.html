@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Box Model and Selectors</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f4ff;
+            padding: 20px;
+        }
+
+        h1 {
+            color: purple;
+            text-align: center;
+        }
+
+        .box {
+            background: white;
+            padding: 20px;
+            border: 5px solid purple;
+            margin: 20px;
+            text-align: center;
+        }
+
+        #heading {
+            color: blue;
+        }
+
+        input[type="text"] {
+            border: 2px solid green;
+            padding: 10px;
+        }
+
+        .parent > p {
+            color: red;
+        }
+
+        button:hover {
+            background: purple;
+            color: white;
+        }
+
+        .card {
+            background: white;
+            padding: 15px;
+            margin: 12px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Box Model and Selectors</h1>
+
+    <div class="box">
+        <h2>CSS Box Model</h2>
+        <p>Content</p>
+        <p>Padding</p>
+        <p>Border</p>
+        <p>Margin</p>
+    </div>
+
+    <h2 id="heading">CSS Selectors</h2>
+
+    <div class="card">
+        <h3>1. Class Selector</h3>
+        <p>.box</p>
+    </div>
+
+    <div class="card">
+        <h3>2. ID Selector</h3>
+        <p>#heading</p>
+    </div>
+
+    <div class="card">
+        <h3>3. Attribute Selector</h3>
+        <input type="text" placeholder="Enter your name">
+    </div>
+
+    <div class="card parent">
+        <h3>4. Child Selector</h3>
+        <p>This is a child paragraph.</p>
+    </div>
+
+    <div class="card">
+        <h3>5. Pseudo-class Selector</h3>
+        <button>Touch Me</button>
+    </div>
+
+</body>
+</html>
+		
